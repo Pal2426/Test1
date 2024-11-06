@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     environment {
-        NODE_VERSION = '14.x' // Specify your Node.js version here
+        NODE_VERSION = '20.x' // Specify your Node.js version here
     }
 
     stages {
         stage('Clone Repository'){
             steps{
-                git url: 'https://github.com/Pal2426/Test1.git', branch: 'main'
+                git url: 'https://github.com/Pal2426/Test1', branch: 'main'
             }
         }
        stage('Compile'){

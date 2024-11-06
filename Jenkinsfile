@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone Repository'){
             steps{
-                git url: 'https://github.com/Pal2426/demo.git', branch: 'main'
+                git url: 'https://github.com/Pal2426/Test1.git', branch: 'main'
             }
         }
        stage('Compile'){

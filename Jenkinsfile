@@ -18,6 +18,7 @@ pipeline {
     }
         stage('Test'){
             steps{
+                bat 'npm i'
                 bat 'npx jest'
     }
 
